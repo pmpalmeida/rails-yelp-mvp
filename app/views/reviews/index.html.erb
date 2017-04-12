@@ -1,0 +1,19 @@
+<h1> INDEX REVIEWS</h1>
+
+
+
+<% @reviews.each do |review| %>
+
+
+  Rating: <%= review.rating %>
+  Comment: <%= review.content %>
+  <hr>
+<%end%>
+
+
+
+<%= link_to 'Voltar', restaurants_path, class: 'btn btn-default' %>
+<%= link_to 'Fazer Review', new_restaurant_review_path, class: 'btn btn-default' %>
+
+
+

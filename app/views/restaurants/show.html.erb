@@ -1,0 +1,31 @@
+<h1>SHOW</h1>
+
+
+
+<h3>Detalhe do Restaurante</h3>
+
+<br>
+  Nome: <%= @restaurant.name %>
+<br>
+  Categoria: <%= @restaurant.address %>
+<br>
+  Telefone: <%= @restaurant.phone_number %>
+<br>
+  Categoria: <%= @restaurant.category %>
+<br>
+
+
+
+
+<%= link_to 'Voltar', restaurants_path, class: 'btn btn-default' %>
+
+<%= link_to 'Editar Restaurante', edit_restaurant_path(@restaurant), class: 'btn btn-info' %>
+
+<%= link_to 'Fazer Review', new_restaurant_review_path(@restaurant), class: 'btn btn-default' %>
+
+<%= link_to 'Ver Reviews', restaurant_reviews_path(@restaurant), class: 'btn btn-default' %>
+
+
+
+
+

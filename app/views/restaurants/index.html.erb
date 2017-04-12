@@ -1,0 +1,18 @@
+<h1>INDEX</h1>
+
+
+
+<%= link_to 'Adicionar restaurante:', new_restaurant_path, class: 'btn btn-default' %>
+
+<br>
+<br>
+<br>
+
+<% @restaurants.each do |restaurant| %>
+
+
+  Nome: <%= restaurant.name %>
+
+  <%= link_to 'Ver Detalhe', restaurant_path(restaurant), class: 'btn btn-default' %>
+  <hr>
+<%end%>
